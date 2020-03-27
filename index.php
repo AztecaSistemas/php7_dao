@@ -33,9 +33,18 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+    Alterando usuario
 $usuario = new Usuario();
 $usuario->loadById(10);
 $usuario->update("aluno10", "senha10");
+echo $usuario;
+*/
+
+/* Excluindo usuario */
+$usuario = new Usuario();
+$usuario->loadById(10);
+$usuario->delete();
 echo $usuario;
 
 ?>
